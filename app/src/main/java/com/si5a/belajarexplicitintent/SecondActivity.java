@@ -12,13 +12,13 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_second); //untuk ngehubung ke activity_second.xml
 
-        getSupportActionBar().setTitle("Layout B");
+        getSupportActionBar().setTitle("Layout B"); //set title bar pucuk
         tvNama = findViewById(R.id.tv_nama);
 
         Intent terima = getIntent();
-        String yNama = terima.getStringExtra("xNama");
+        String yNama = terima.getStringExtra("xNama"); // untuk nerima kiriman putExtra dari MainActivity
         tvNama.setText(yNama);
     }
 }

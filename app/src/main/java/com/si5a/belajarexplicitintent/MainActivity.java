@@ -31,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
                     etNama.setError("Nama harus diisi");
                 }
                 else {
-                    Intent pindah = new Intent(MainActivity.this, SecondActivity.class);
-                    pindah.putExtra("xNama",nama);
-                    startActivity(pindah);
+                    Intent pindah = new Intent(MainActivity.this, SecondActivity.class); //buat inisiasi pindah halaman (niat be)
+                    pindah.putExtra("xNama",nama); //untuk ngirim ke halaman selanjutnya dari variabel string
+                    startActivity(pindah); // untuk beneran pindah
                 }
             }
         });
